@@ -21,3 +21,14 @@ h1{font-size:clamp(43px,4.3vw,62px);line-height:1.08;letter-spacing:-1.5px}
 #contact-data{padding:15px 28px 24px;background:var(--paper);border-top:3px solid #b39760}#contact-data>div:last-child{border-bottom:0}.floating{display:flex;align-items:center;gap:9px;padding:13px 21px;font-weight:600;background:#153e36;border-color:#d3dfd8}.floating svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:1050px){.brand{font-size:19px}.brand b{font-size:48px}nav{gap:15px}.art-r{left:18%;font-size:250px}}
 @media(max-width:780px){header{padding:18px 22px}.brand{font-size:19px}.brand b{font-size:48px}.brand small{font-size:8px}.nav-contact{padding:13px 14px}h1{font-size:43px}.studio{font-size:24px}.hero-professional{font-size:11px;max-width:250px;line-height:1.8;margin-bottom:25px}.hero-art{height:230px}.art-frame{min-height:230px}.art-frame:after{inset:12px}.art-r{font-size:210px;top:-19%;left:58%}.art-seal{left:23px;top:27px;right:auto;text-align:left}.art-frame p{font-size:8px;bottom:42px;left:23px;max-width:50%}.art-frame small{font-size:6px;bottom:21px;left:23px}.circle{width:130px;height:130px;right:-12%;top:10%}.area:not(.featured):last-child>div{display:flex}.area p,.featured ul{font-size:15px}.area:not(.featured):last-child{grid-column:auto}.about-mark{min-height:250px}.floating{font-size:13px;padding:12px 16px}.actions{gap:18px}.actions .button{width:100%}.actions>a{padding:8px 0}.hero-copy{min-width:0}#contact-data{padding:10px 20px 20px}}
+
+/* Mayor peso tipográfico desde las áreas de práctica hasta el pie. */
+#areas :is(h2,h3,p,li,button),
+#estudio :is(h2,p,a),
+#consulta :is(h2,h3,p),
+#preguntas :is(h2,p,summary),
+#contacto :is(h2,p,a,span),
+footer :is(p,a,span){font-weight:700}
+:is(#areas,#estudio,#consulta,#preguntas,#contacto) h2 em{font-weight:700}
+.area>div{min-width:0}.area h3{overflow-wrap:anywhere}
+#contact-data a{overflow-wrap:anywhere}
