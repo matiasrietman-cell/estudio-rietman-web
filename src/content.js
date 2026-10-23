@@ -1,4 +1,4 @@
-export const contact = {studio:'Estudio Jurídico Rietman',professional:'Dr. Matías Gabriel Rietman',whatsapp:'5492804002634',phone:'',email:'matiasrietman@hotmail.com',address:'Centenario 1125, Trelew, Chubut',hours:'De 08 a 12 y de 14 a 20 hs',registration:'Matrícula provincial 2023',confirmed:false};
+export const contact = {studio:'Estudio Jurídico Rietman',professional:'Dr. Matías Gabriel Rietman',whatsapp:'5492804002634',phone:'',email:'matiasrietman@hotmail.com',address:'Centenario 1125, Trelew, Chubut',hours:'De 08 a 12 y de 14 a 20 hs',registration:'Matrícula provincial 2023',confirmed:true};
 export const generalMessage='Hola, quisiera coordinar una consulta con el estudio jurídico.';
 export const areas=[
 ['ART','Accidentes de trabajo y reclamos contra ART','Evaluamos tu situación y la documentación para orientarte sobre las alternativas de reclamo. Cada caso requiere un análisis particular.','Hola, quisiera realizar una consulta por un accidente de trabajo o un reclamo contra la ART.'],
