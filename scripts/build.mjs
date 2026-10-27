@@ -1,4 +1,4 @@
 import {mkdir,copyFile,cp,rm} from 'node:fs/promises';
 import {contact} from '../src/content.js';
 if(process.argv.includes('--publish')){const required=['studio','professional','whatsapp','email','address','hours','registration'];if(!contact.confirmed||required.some(k=>!contact[k])){console.error('Publicación bloqueada: confirmar datos y contenido en src/content.js (confirmed: true).');process.exit(1);}}
-await rm('dist',{recursive:true,force:true});await mkdir('dist',{recursive:true});await copyFile('index.html','dist/index.html');await cp('src','dist/src',{recursive:true});console.log('Construcción lista en dist/. Para publicar, ejecutar npm run build -- --publish después de la aprobación.');
+await rm('dist',{recursive:true,force:true});await mkdir('dist',{recursive:true});await copyFile('index.html','dist/index.html');await copyFile('sitemap.xml','dist/sitemap.xml');await cp('src','dist/src',{recursive:true});console.log('Construcción lista en dist/. Para publicar, ejecutar npm run build -- --publish después de la aprobación.');
